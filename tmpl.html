@@ -55,6 +55,17 @@
         <li><a href="/ja/showcase.html">ショーケース</a></li>
         <li><a href="/ja/blog/">ブログ</a></li>
         <li><a href="/ja/contact.html">連絡先</a></li>{{ end }}
+        {{ if eq .Lang "pt-BR" }}<li><a href="{{ .Top }}">Início</a></li>
+        <li><a href="https://github.com/hajimehoshi/ebiten">Código fonte</a></li>
+        <li><a href="https://pkg.go.dev/github.com/hajimehoshi/ebiten/v2">Referência da API</a></li>
+        <li><a href="/pt-BR/tour/">Guia (WIP)</a></li>
+        <li><a href="/pt-BR/documents/">Documentos</a></li>
+        <li><a href="/pt-BR/examples/">Exemplos</a></li>
+        <li><a href="/pt-BR/showcase.html">Projetos em Destaque</a></li>
+        <li><a href="/pt-BR/blog/">Blog</a></li>
+        <li><a href="/pt-BR/contact.html">Fale conosco</a></li>{{ end }}
+    </ul>
+
       </ul>
       {{ if .SubNav }}{{ .SubNav | noescape }}{{ end }}
     </nav>

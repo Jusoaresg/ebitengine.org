@@ -292,6 +292,8 @@ func langName(lang string) string {
 		return "English"
 	case "ja":
 		return "日本語"
+	case "pt-BR":
+		return "Português (Brasileiro)"
 	}
 	return ""
 }
